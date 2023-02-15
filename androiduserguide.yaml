@@ -1,15 +1,40 @@
+# apiVersion: backstage.io/v1alpha1
+# kind: Component
+# metadata:
+#   name: frobs-awesome
+#   description: |
+#     Backend service that implements the Frobs API, as defined
+#     in [the Frobs RFC](https://example.com/spec/frob.html).
+#   labels:
+#     system: frobs
+#     lifecycle: production
+#     example.com/service-discovery-name: frobsawesome
+#   annotations:
+#     circleci.com/project-slug: github/example-org/frobs-awesome
+# spec:
+#   type: service
+  
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: frobs-awesome
+  name: android guide
   description: |
-    Backend service that implements the Frobs API, as defined
-    in [the Frobs RFC](https://example.com/spec/frob.html).
-  labels:
-    system: frobs
-    lifecycle: production
-    example.com/service-discovery-name: frobsawesome
+    Android is an open-source developer portal that puts the developer experience first.
+  links:
+    - title: Website
+      url: https://developer.android.com
+    - title: Documentation
+      url: https://developer.android.com/studio/intro
+    - title: Storybook
+      url: https://developer.android.com
+    - title: Discord Chat
+      url: https://developer.android.com
   annotations:
-    circleci.com/project-slug: github/example-org/frobs-awesome
+    github.com/project-slug: android/architecture-samples
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://developer.android.com
 spec:
-  type: service
+  type: library
+  owner: CNCF
+  lifecycle: experimental
+

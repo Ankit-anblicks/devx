@@ -13,10 +13,6 @@ metadata:
       url: https://developer.android.com
     - title: Discord Chat
       url: https://developer.android.com
-  annotations:
-    github.com/project-slug: android/architecture-samples
-    backstage.io/techdocs-ref: dir:.
-    lighthouse.com/website-url: https://developer.android.com
 spec:
   type: library
   owner: CNCF
